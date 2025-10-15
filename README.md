@@ -37,10 +37,6 @@
 * Click "Save" to log your entry.
 * Review your past moods and trends in the history section.
 
-## Live Demo
-
-[View Live Demo on Vercel](https://your-vercel-link.vercel.app)
-
 ## Contributing
 
 Contributions are welcome! Feel free to open issues or submit pull requests to improve MoodJournal.
