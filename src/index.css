@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme variables */
+:root {
+  --bg-1: 255 243 244; /* light pastel */
+  --card-bg: 255 255 255;
+  --text: 30 30 30;
+  --muted: 99 99 102;
+}
+
+.dark {
+  --bg-1: 12 14 23;
+  --card-bg: 18 20 28;
+  --text: 226 226 230;
+  --muted: 148 163 184;
+}
+
+html, body, #root { height: 100%; }
+body {
+  background: linear-gradient(135deg, rgba(var(--bg-1),1) 0%, rgba(255,250,240,1) 100%);
+  color: rgb(var(--text));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* App card */
+.app-card { @apply max-w-3xl mx-auto mt-12 p-6 rounded-2xl shadow-lg; background-color: rgb(var(--card-bg) / 0.9); }
+.header { @apply text-2xl font-semibold mb-1; }
+.small { color: rgb(var(--muted)); }
+
+/* Buttons */
+.btn-primary { @apply px-4 py-2 rounded bg-pink-500 text-white; }
+
+/* Quote animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn { animation: fadeIn 0.8s ease-in-out; }
